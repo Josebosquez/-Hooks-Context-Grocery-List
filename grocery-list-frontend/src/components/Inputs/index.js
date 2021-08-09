@@ -6,26 +6,23 @@ function Inputs() {
 
     function handleOnSubmit(e) {
         e.preventDefault();
+        console.log('en')
 
-        console.log("submit")
     }
-
+    
     function onChange(e) {
         setInputValue(e)
-    }
-
-    function handleButton() {
         console.log(inputValue)
     }
 
     return (
         <div>
             <form onSubmit={handleOnSubmit}>
-                <input onChange={(e) => {onChange(e.target.value) }} />
-                <button onClick={() => { handleButton() }}>Enter</button>
+                <input onChange={(e) => { onChange(e.target.value) }} />
+                <button>Enter</button>
             </form>
-            <hr/>
-            <Sorting/>
+            <hr />
+            <Sorting />
         </div>
     )
 }
