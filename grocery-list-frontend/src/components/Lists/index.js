@@ -6,7 +6,10 @@ function Lists(){
 return (
     <div>
         Lists
-
+        <ul>
+            Map
+            <li></li>
+        </ul>
     </div>
 )
 }
